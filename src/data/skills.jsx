@@ -1,4 +1,7 @@
 import React from 'react';  // Ensure React is imported
+import { FaBootstrap } from 'react-icons/fa';  // For Bootstrap icon
+import { SiCplusplus } from 'react-icons/si';  // For C Language icon
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -21,4 +24,7 @@ export const skills = [
   { name: "Tailwind", icon: <SiTailwindcss className="text-cyan-500" /> },
   { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
   { name: "GitHub", icon: <FaGithub className="text-black" /> },
+  { name: "Bootstrap", icon: <FaBootstrap className="text-info" /> },
+{ name: "C Language", icon: <SiCplusplus className="text-green-500" /> },
+
 ];

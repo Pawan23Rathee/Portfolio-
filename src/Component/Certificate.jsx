@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import cert1 from "../assets/Certificate1.jpeg";
-import cert2 from "../assets/Certificate2.png";
+import cert1 from "../assets/Certificate1.jpeg"; // Existing certificates
+import cert2 from "../assets/Certificate2.png"; // Existing certificates
+import cert3 from "../assets/DeloitteCertificate.png"; // Fixed image path
+import cert4 from "../assets/MoretonBayCertificate.png"; // New certificate image
 import React from "react";
 
 const certificates = [
@@ -14,6 +16,19 @@ const certificates = [
     title: "JavaScript Mastery",
     image: cert2,
     date: "Dec 2023",
+  },
+  {
+    title: "Deloitte Australia's Data Analytics", // Adding this new certificate
+    image: cert3, // Corrected path for the image
+    date: "Apr 2025", // Update the date accordingly
+    description: "Completed a job simulation involving data analysis and forensic technology, created a data dashboard using Tableau, and used Excel to classify data and draw business conclusions.",
+  },
+  {
+    title: "City of Moreton Bay's Entrepreneurship & Innovation: Web Development", // New certificate
+    image: cert4, // Image for the new certificate
+    date: "Apr 2025", // Adjust the date
+    description: "Completed a job simulation involving website planning and creation, created a sitemap and user flow using a diagram creation tool, and used HTML & CSS to create a landing page.",
+    link: "https://lnkd.in/eSeMQNyq" // Link to the simulation
   },
 ];
 
@@ -69,6 +84,23 @@ export default function Certificate() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Optional: You can also show the description of the certificate */}
+      {selectedCert && (
+        <div className="mt-4 text-center text-gray-800 max-w-2xl mx-auto">
+          <p>{selectedCert.description}</p>
+          {selectedCert.link && (
+            <a
+              href={selectedCert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 mt-2 inline-block"
+            >
+              Check out the simulation here
+            </a>
+          )}
+        </div>
+      )}
     </section>
   );
 }
