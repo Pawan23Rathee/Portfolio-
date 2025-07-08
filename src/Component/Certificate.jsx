@@ -9,7 +9,7 @@ import cert3 from "../assets/DeloitteCertificate.png";
 import cert4 from "../assets/MoretonBayCertificate.png";
 import cert5 from "../assets/Mastering.jpeg";
 import cert6 from "../assets/Large.jpeg";
-import cert7 from "../assets/AI.jpeg";
+import cert7 from "../assets/Ai.jpeg";
 import cert8 from "../assets/Aware.png";
 import cert9 from "../assets/Appreciate.png";
 
