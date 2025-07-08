@@ -15,7 +15,7 @@ export default function About() {
         className="w-48 h-48 rounded-full overflow-hidden border-4 border-indigo-600 shadow-lg"
       >
         <img
-          src="/Pawan.jpeg"
+          src="/Pawan.jpg"
           alt="Pawan Rathee"
           className="object-cover w-full h-full"
         />
